@@ -880,13 +880,4 @@ public class Tool {
 			errMgr.emit(ErrorType.WARNING_TREATED_AS_ERROR, new ANTLRMessage(ErrorType.WARNING_TREATED_AS_ERROR));
 		}
 	}
-
-	public void version() {
-		info("ANTLR Parser Generator  Version " + VERSION);
-	}
-
-	public void exit(int e) { System.exit(e); }
-
-	public void panic() { throw new Error("ANTLR panic"); }
-
 }
